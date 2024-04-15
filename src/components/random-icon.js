@@ -12,7 +12,7 @@ const RandomIcon = () => {
     .filter(key => key !== "fas" && key !== "prefix" )
     .map(icon => Icons[icon]);
 
-    const handleClick = async () => {
+    const handleClick = () => {
       const random = iconList[Math.floor(Math.random() * iconList.length)];
       setIconQueue([...iconQueue, random]);
     };
